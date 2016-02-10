@@ -1,0 +1,33 @@
+<div class="row">
+  <h1>Catalógo</h1>
+  <div class="row">
+    <div class="well">
+      <div class="form-group">
+        <label for="title">Título</label>
+        <input type="text" class="form-control" id="title" ng-model="newProduct.title">
+      </div>
+      <div class="form-group">
+        <label for="stock">Stock</label>
+        <input type="number" class="form-control" id="stock" ng-model="newProduct.stock">
+      </div>
+      <div class="form-group">
+        <label for="price">Precio</label>
+        <input type="number" class="form-control" id="price" ng-model="newProduct.price">
+      </div>
+      <div class="form-group">
+        <label for="type">Tipo</label>
+        <input type="text" class="form-control" id="type" ng-model="newProduct.type">
+      </div>
+      <button class="btn btn-success" ng-click="addProduct()">
+        Añadir
+      </button>
+    </div>
+  </div>
+  <ul class="list-group">
+    <li class="list-group-item" ng-repeat="product in catalog">
+      <span class="badge">{{ product.stock }}</span>
+      <h4 class="list-group-item-heading">{{ product.title }}</h4>
+      <p class="list-group-item-text"><i>{{ product._id }}</i> // Precio: {{ product.price }}€</p>
+    </li>
+  </ul>
+</div>
