@@ -33,6 +33,6 @@ Cliente web creado para las **II Jornadas Técnicas UEx – CIEMAT. Introducció
 5. Ejecutamos el servidor de desarrollo
   ```sh
   grunt serve
-  ``
+  ```
 
 **NOTA**: El servicio se levanta en el puerto `80`.
